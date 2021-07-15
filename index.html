@@ -1,0 +1,75 @@
+
+<html>
+  <head>
+    <title>Image Identification App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Uchen&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <center>
+      <div class="col-xs-12 header_div">
+        <h2>Image Identification App 
+          <img src="logo.gif">
+        </h2>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xm-12 cam_div">
+      <label>Webcam View -&nbsp;</label>
+      <br>
+      <div id="Cam">
+      </div>
+      <br>
+      <button class="btn btn-info btn-md" onclick="Snap()">Take Snap</button>
+      <br>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 cam_div">
+        <label>Snapshot -&nbsp;</label>
+        <br>
+        <div id="Snap">
+          <img id="Cap_Img" src="Door.PNG">
+        </div>
+        <br>
+        <button class="btn btn-success btn-md" onclick="Check()">Identify Image</button>
+        <br>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 Result">
+        <h3 class="col-sm-6 col-xs-12">
+        <img id="bulb" src="blub.gif">
+        <span id="Result_h3">
+          
+        </span>
+      </h3>
+        </div>
+        <div class="footer">
+          Developed by - Danish Vel ST & Prabha Vanniar Mam
+        </div>
+
+    </center>
+
+
+    
+<script src="main.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+ 
+
